@@ -1,8 +1,11 @@
 import './App.css'
-import TestComponent from './TestComponent';
+import Card from './components/card';
+
 
 function App() {
-  return <TestComponent />;
+  return <Card firstName="Md. Rafiul" lastName="Islam" nickName="Mahin" age={29}
+  
+  />;
 }
 
 export default App;
