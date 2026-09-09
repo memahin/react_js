@@ -10,15 +10,15 @@
 //     ); 
 // }
 
-export default function Card(firstName, lastName, nickName, age){
-    
-    return<>
-    (    <div>
-            <p>First Name: {firstName} </p>
-            <p>Last Name: {lastName} </p>
-            <p>Nick Name: {nickName}</p>
-            <p>Age: {age}</p>
+export default function Card(props){
+    console.log(props);
+    return(    
+    <div>
+            {props.children}
+            <p>First Name: {props.firstName} </p>
+            <p>Last Name: {props.lastName} </p>
+            <p>Nick Name: {props.nickName}</p>
+            <p>Age: {props.age}</p>
         </div>
     );
-    </>
 }
